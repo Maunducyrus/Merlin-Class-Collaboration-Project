@@ -236,4 +236,98 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Theme Toggle - Dark/Light Mode
+   */
+  const themeToggle = document.querySelector('#theme-toggle');
+  
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-theme');
+    } else if (savedTheme === 'dark') {
+      document.body.classList.remove('light-theme');
+    } else {
+      // Check system preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.body.classList.add('light-theme');
+      }
+    }
+  }
+  
+  function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+    const isLight = document.body.classList.contains('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  }
+  
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+  
+  // Initialize theme on load
+  initTheme();
+
+  /**
+   * Scroll Progress Indicator
+   */
+  const scrollProgress = document.querySelector('#scroll-progress');
+  
+  function updateScrollProgress() {
+    if (scrollProgress) {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + '%';
+    }
+  }
+  
+  window.addEventListener('scroll', updateScrollProgress);
+  window.addEventListener('load', updateScrollProgress);
+
+  /**
+   * Animated Counter
+   */
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-target'));
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    
+    const updateCounter = () => {
+      current += step;
+      if (current < target) {
+        el.textContent = Math.floor(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        el.textContent = target;
+      }
+    };
+    
+    updateCounter();
+  }
+  
+  // Intersection Observer for counters
+  if ('IntersectionObserver' in window) {
+    const counterElements = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    counterElements.forEach(counter => {
+      counterObserver.observe(counter);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    const counterElements = document.querySelectorAll('.counter');
+    counterElements.forEach(counter => {
+      animateCounter(counter);
+    });
+  }
+
 })();
