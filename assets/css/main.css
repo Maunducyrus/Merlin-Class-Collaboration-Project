@@ -4644,6 +4644,7 @@ section,
 # Animated Gradient Text
 --------------------------------------------------------------*/
 .gradient-text {
+  color: var(--accent-color);
   background: linear-gradient(90deg, var(--accent-color), #ff6b9d, var(--accent-color));
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -4683,6 +4684,7 @@ section,
 .tilt-card {
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .tilt-card:hover {

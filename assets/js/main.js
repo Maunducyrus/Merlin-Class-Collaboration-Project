@@ -308,18 +308,26 @@
   }
   
   // Intersection Observer for counters
-  const counterElements = document.querySelectorAll('.counter');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
-        entry.target.classList.add('counted');
-        animateCounter(entry.target);
-      }
+  if ('IntersectionObserver' in window) {
+    const counterElements = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    counterElements.forEach(counter => {
+      counterObserver.observe(counter);
     });
-  }, { threshold: 0.5 });
-  
-  counterElements.forEach(counter => {
-    counterObserver.observe(counter);
-  });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    const counterElements = document.querySelectorAll('.counter');
+    counterElements.forEach(counter => {
+      animateCounter(counter);
+    });
+  }
 
 })();
