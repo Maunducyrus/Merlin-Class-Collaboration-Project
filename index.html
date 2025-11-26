@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Craftivo Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Cyrus Maundu - Full Stack Developer Portfolio</title>
+  <meta name="description" content="Cyrus Maundu is a Full Stack Developer specializing in web development, UI/UX design, and digital solutions. View portfolio, services, and contact information.">
+  <meta name="keywords" content="full stack developer, web developer, UI/UX designer, portfolio, Cyrus Maundu, Nairobi, Kenya, React, Node.js, frontend developer">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -38,37 +38,31 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#hero" class="skip-to-main" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 9999;">Skip to main content</a>
+
+  <header id="header" class="header d-flex align-items-center fixed-top" role="banner">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="Craftivo - Go to homepage">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Craftivo</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="portfolio-details.html">Portfolio Details</a></li>
+              <li><a href="service-details.html">Service Details</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
@@ -81,23 +75,23 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" role="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" aria-label="Hero introduction">
 
-      <img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
+      <img src="assets/img/profile/profile-bg-5.webp" alt="Background image showcasing creativity" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Hi, I'm CYRUS MAUNDU</h2>
             <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="social-links" aria-label="Social media links">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -811,6 +805,87 @@ My main objective is to develop a website showcasing the latest trends in the Au
 
     </section><!-- /Portfolio Section -->
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Testimonials</span>
+        <h2>Testimonials</h2>
+        <p>Hear what clients and colleagues say about working with me. Building great relationships through quality work and effective communication.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Working with Cyrus was an absolute pleasure. The attention to detail and technical expertise shown throughout the project exceeded our expectations. Highly recommended!
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Sarah Johnson</h3>
+                <h4>CEO, TechStart Inc.</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                The website delivered was modern, responsive, and exactly what we envisioned. The communication was excellent throughout the development process.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Michael Chen</h3>
+                <h4>Marketing Director, Innovate Labs</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Professional, reliable, and incredibly talented. Our e-commerce platform was delivered on time and has significantly improved our online sales.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Emily Rodriguez</h3>
+                <h4>Founder, StyleHub</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -818,7 +893,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Contact</span>
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>Have a project in mind or want to discuss potential collaboration? I'd love to hear from you! Feel free to reach out through any of the channels below or fill out the contact form.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -918,32 +993,32 @@ My main objective is to develop a website showcasing the latest trends in the Au
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Product Management</a></li>
+            <li><a href="#services">Marketing</a></li>
+            <li><a href="#services">Graphic Design</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>7172 Tom Mboya Street</p>
+          <p>Nairobi</p>
+          <p>Kenya</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+254 701760976</span></p>
+          <p><strong>Email:</strong> <span>mweru@gmail.com</span></p>
         </div>
 
       </div>
