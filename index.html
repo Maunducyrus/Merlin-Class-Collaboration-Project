@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Craftivo Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Cyrus Maundu - Full Stack Developer Portfolio</title>
+  <meta name="description" content="Cyrus Maundu is a Full Stack Developer specializing in web development, UI/UX design, and digital solutions. View portfolio, services, and contact information.">
+  <meta name="keywords" content="full stack developer, web developer, UI/UX designer, portfolio, Cyrus Maundu, Nairobi, Kenya, React, Node.js, frontend developer">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -38,37 +38,48 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Animated Background Particles -->
+  <div class="particles-bg">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Skip to main content link for accessibility -->
+  <a href="#hero" class="skip-to-main" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 9999;">Skip to main content</a>
+
+  <header id="header" class="header d-flex align-items-center fixed-top" role="banner">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="Craftivo - Go to homepage">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Craftivo</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="portfolio-details.html">Portfolio Details</a></li>
+              <li><a href="service-details.html">Service Details</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
@@ -81,23 +92,23 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" role="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" aria-label="Hero introduction">
 
-      <img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
+      <img src="assets/img/profile/profile-bg-5.webp" alt="Background image showcasing creativity" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Hi, I'm CYRUS MAUNDU</h2>
             <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="social-links" aria-label="Social media links">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -112,7 +123,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">About Me</span>
         <h2>About Me</h2>
-        <p>Teamwork is the ability of individuals to work together toward a common goal by sharing ideas, skills, and responsibilities. It involves good communication, cooperation, and trust among team members. When people combine their strengths, they solve problems more quickly, make better decisions, and achieve results that are often better than what one person could accomplish alone. Effective teamwork creates a positive environment where everyone feels valued and motivated.</p>
+        <p>I believe in the power of collaboration and continuous learning. As a Full Stack Developer, I combine technical expertise with creative thinking to deliver innovative digital solutions. My goal is to help businesses establish a strong online presence through modern, user-friendly web applications that drive engagement and growth.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -171,8 +182,8 @@
               <div class="bio-section">
                 <div class="section-tag">About Me</div>
                 <h2>Transforming Ideas into Digital Reality</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <p>As a passionate Full Stack Developer, I specialize in building modern, responsive web applications that deliver exceptional user experiences. With expertise in both frontend and backend technologies, I create seamless digital solutions that help businesses grow and succeed online.</p>
+                <p>My approach combines technical excellence with creative problem-solving, ensuring that every project not only meets but exceeds client expectations. I stay up-to-date with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
               </div>
 
               <div class="details-grid">
@@ -196,7 +207,7 @@
                   <i class="bi bi-geo-alt"></i>
                   <div class="detail-content">
                     <span>Based In</span>
-                    <strong>Portland, OR</strong>
+                    <strong>Nairobi, Kenya</strong>
                   </div>
                 </div>
 
@@ -204,7 +215,7 @@
                   <i class="bi bi-envelope"></i>
                   <div class="detail-content">
                     <span>Email</span>
-                    <strong>contact@example.com</strong>
+                    <strong>cyrus@example.com</strong>
                   </div>
                 </div>
 
@@ -280,6 +291,16 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Tech Stack Badges -->
+                <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                  <span class="tech-badge"><i class="bi bi-braces"></i> JavaScript</span>
+                  <span class="tech-badge"><i class="bi bi-filetype-html"></i> HTML5</span>
+                  <span class="tech-badge"><i class="bi bi-filetype-css"></i> CSS3</span>
+                  <span class="tech-badge"><i class="bi bi-git"></i> Git</span>
+                  <span class="tech-badge"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+                  <span class="tech-badge"><i class="bi bi-database"></i> MySQL</span>
+                </div>
               </div>
             </div>
           </div>
@@ -296,9 +317,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Resume</span>
         <h2>Resume</h2>
-        <p>I'm a front-end Web-developer who's main focus is on turnig ideas into accessible, performant interface. I focus only on Automotive tech,new innovations around Automotive industry and in finding solutions to future mobility.
-
-My main objective is to develop a website showcasing the latest trends in the Automotive Technology, including electric vehicles ,autonomous driving and connected cars. The site features resposive design,interactive elements,and information on how web developments can embrace users experiences in automotive Apps</p>
+        <p>I'm a Full Stack Developer passionate about building accessible, performant web applications. With years of experience in modern web technologies, I specialize in creating responsive, user-friendly interfaces that help businesses succeed in the digital world.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -310,7 +329,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <div class="header-content">
                   <span class="section-badge">Experience</span>
                   <h2>Professional Journey</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Throughout my career, I have had the opportunity to work on diverse projects that have shaped my skills and expertise in web development and digital solutions.</p>
                 </div>
               </div>
 
@@ -323,14 +342,14 @@ My main objective is to develop a website showcasing the latest trends in the Au
                     <div class="period-badge">Current</div>
                   </div>
                   <div class="card-body">
-                    <h3>Senior Creative Director</h3>
+                    <h3>Senior Full Stack Developer</h3>
                     <p class="company-name">Digital Innovation Labs</p>
                     <span class="duration">2023 - Present</span>
-                    <p class="description">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
+                    <p class="description">Leading the development of scalable web applications using modern technologies. Collaborating with cross-functional teams to deliver innovative digital solutions.</p>
                     <div class="skills-tags">
                       <span class="skill-tag">Leadership</span>
-                      <span class="skill-tag">Strategy</span>
-                      <span class="skill-tag">Innovation</span>
+                      <span class="skill-tag">React</span>
+                      <span class="skill-tag">Node.js</span>
                     </div>
                   </div>
                 </div>
@@ -342,10 +361,10 @@ My main objective is to develop a website showcasing the latest trends in the Au
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3>Product Design Lead</h3>
+                    <h3>Frontend Developer</h3>
                     <p class="company-name">TechForward Solutions</p>
                     <span class="duration">2020 - 2023</span>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+                    <p class="description">Developed responsive and interactive user interfaces using React and modern CSS frameworks. Implemented performance optimizations and accessibility improvements.</p>
                   </div>
                 </div>
 
@@ -356,10 +375,10 @@ My main objective is to develop a website showcasing the latest trends in the Au
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3>UX Designer</h3>
+                    <h3>Junior Web Developer</h3>
                     <p class="company-name">Creative Studio Inc</p>
                     <span class="duration">2017 - 2020</span>
-                    <p class="description">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="description">Built and maintained websites for various clients. Gained hands-on experience in HTML, CSS, JavaScript, and PHP development.</p>
                   </div>
                 </div>
               </div>
@@ -372,7 +391,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <div class="header-content">
                   <span class="section-badge">Education</span>
                   <h2>Academic Background</h2>
-                  <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.</p>
+                  <p>A strong foundation in computer science and continuous learning through professional certifications keeps me at the forefront of technology.</p>
                 </div>
               </div>
 
@@ -387,9 +406,9 @@ My main objective is to develop a website showcasing the latest trends in the Au
                         <span class="year-range">2015 - 2017</span>
                         <span class="degree-level">Masters</span>
                       </div>
-                      <h4>Master of Design Innovation</h4>
-                      <p class="institution">Institute of Creative Arts</p>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                      <h4>Master of Computer Science</h4>
+                      <p class="institution">Institute of Technology</p>
+                      <p class="description">Specialized in software engineering and web technologies. Focused on building scalable applications and modern development practices.</p>
                       <div class="achievement">
                         <i class="bi bi-award"></i>
                         <span>Summa Cum Laude</span>
@@ -406,9 +425,9 @@ My main objective is to develop a website showcasing the latest trends in the Au
                         <span class="year-range">2011 - 2015</span>
                         <span class="degree-level">Bachelor</span>
                       </div>
-                      <h4>Bachelor of Fine Arts</h4>
-                      <p class="institution">Creative Arts University</p>
-                      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                      <h4>Bachelor of Computer Science</h4>
+                      <p class="institution">Tech University</p>
+                      <p class="description">Built a strong foundation in programming, algorithms, data structures, and software development methodologies.</p>
                     </div>
                   </div>
 
@@ -455,7 +474,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Services</span>
         <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>I offer a comprehensive range of digital services designed to help businesses thrive in the modern digital landscape. From custom web development to UI/UX design, I deliver solutions that drive results.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -467,7 +486,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-palette"></i>
               </div>
               <h4>Brand Identity</h4>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus vivamus magna.</p>
+              <p>Create a memorable brand identity with custom logos, color schemes, and visual elements that represent your business.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -482,7 +501,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-layout-text-window-reverse"></i>
               </div>
               <h4>UI/UX Design</h4>
-              <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui donec rutrum.</p>
+              <p>Design intuitive and engaging user interfaces that enhance user experience and drive conversions.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -495,8 +514,8 @@ My main objective is to develop a website showcasing the latest trends in the Au
               <div class="icon-wrapper">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <h4>Development</h4>
-              <p>Praesent sapien massa convallis a pellentesque nec egestas non nisi cras ornare arcu.</p>
+              <h4>Web Development</h4>
+              <p>Build fast, scalable, and secure web applications using modern frameworks and best practices.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -510,7 +529,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-phone"></i>
               </div>
               <h4>Mobile Apps</h4>
-              <p>Vivamus suscipit tortor eget felis porttitor volutpat quisque velit nisi pretium ut lacinia.</p>
+              <p>Develop responsive mobile applications that provide seamless experiences across all devices.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -524,7 +543,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-megaphone"></i>
               </div>
               <h4>Digital Marketing</h4>
-              <p>Nulla porttitor accumsan tincidunt curabitur aliquet quam id dui posuere blandit mauris.</p>
+              <p>Boost your online presence with strategic digital marketing campaigns that reach your target audience.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -538,7 +557,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-search"></i>
               </div>
               <h4>SEO Services</h4>
-              <p>Pellentesque in ipsum id orci porta dapibus donec sollicitudin molestie malesuada proin.</p>
+              <p>Improve your search engine rankings and drive organic traffic with proven SEO strategies.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -552,7 +571,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
               <h4>Analytics</h4>
-              <p>Sed porttitor lectus nibh curabitur arcu erat accumsan id imperdiet et porttitor at sem.</p>
+              <p>Track and analyze your website performance with comprehensive analytics and actionable insights.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -566,7 +585,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
                 <i class="bi bi-shield-check"></i>
               </div>
               <h4>Security</h4>
-              <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus mauris blandit aliquet.</p>
+              <p>Protect your digital assets with robust security measures and regular vulnerability assessments.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -596,6 +615,53 @@ My main objective is to develop a website showcasing the latest trends in the Au
 
     </section><!-- /Services Section -->
 
+    <!-- Fun Facts / Stats Section -->
+    <section id="fun-facts" class="fun-facts section" aria-label="Statistics and achievements">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="fact-item">
+              <div class="icon-box">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <span class="counter" data-target="156">0</span>
+              <span class="counter-label">Projects Completed</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="fact-item">
+              <div class="icon-box">
+                <i class="bi bi-people"></i>
+              </div>
+              <span class="counter" data-target="98">0</span>
+              <span class="counter-label">Happy Clients</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="fact-item">
+              <div class="icon-box">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <span class="counter" data-target="42">0</span>
+              <span class="counter-label">Awards Won</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="fact-item">
+              <div class="icon-box">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <span class="counter" data-target="2500">0</span>
+              <span class="counter-label">Cups of Coffee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Fun Facts Section -->
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
@@ -603,7 +669,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Portfolio</span>
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>Explore my recent projects showcasing a diverse range of web development and design work. Each project represents my commitment to delivering high-quality, user-focused digital solutions.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -799,7 +865,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
           <div class="row align-items-center">
             <div class="col-lg-8">
               <h3>Like what you see?</h3>
-              <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              <p>Let's collaborate on your next project and bring your ideas to life with innovative web solutions.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
               <a href="#contact" class="btn btn-accent">Let's Work Together</a>
@@ -811,6 +877,87 @@ My main objective is to develop a website showcasing the latest trends in the Au
 
     </section><!-- /Portfolio Section -->
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Testimonials</span>
+        <h2>Testimonials</h2>
+        <p>Hear what clients and colleagues say about working with me. Building great relationships through quality work and effective communication.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Working with Cyrus was an absolute pleasure. The attention to detail and technical expertise shown throughout the project exceeded our expectations. Highly recommended!
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Sarah Johnson</h3>
+                <h4>CEO, TechStart Inc.</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                The website delivered was modern, responsive, and exactly what we envisioned. The communication was excellent throughout the development process.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Michael Chen</h3>
+                <h4>Marketing Director, Innovate Labs</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Professional, reliable, and incredibly talented. Our e-commerce platform was delivered on time and has significantly improved our online sales.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="profile mt-auto">
+                <h3>Emily Rodriguez</h3>
+                <h4>Founder, StyleHub</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -818,7 +965,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Contact</span>
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>Have a project in mind or want to discuss potential collaboration? I'd love to hear from you! Feel free to reach out through any of the channels below or fill out the contact form.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -906,7 +1053,7 @@ My main objective is to develop a website showcasing the latest trends in the Au
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Craftivo</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Transforming ideas into digital reality. As a Full Stack Developer, I specialize in creating modern web applications that deliver exceptional user experiences and help businesses grow online.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -918,32 +1065,32 @@ My main objective is to develop a website showcasing the latest trends in the Au
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Product Management</a></li>
+            <li><a href="#services">Marketing</a></li>
+            <li><a href="#services">Graphic Design</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>7172 Tom Mboya Street</p>
+          <p>Nairobi</p>
+          <p>Kenya</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+254 701760976</span></p>
+          <p><strong>Email:</strong> <span>mweru@gmail.com</span></p>
         </div>
 
       </div>
@@ -964,6 +1111,12 @@ My main objective is to develop a website showcasing the latest trends in the Au
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+    <i class="bi bi-moon-fill"></i>
+    <i class="bi bi-sun-fill"></i>
+  </button>
 
   <!-- Preloader -->
   <div id="preloader"></div>
